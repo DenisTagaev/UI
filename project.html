@@ -1,183 +1,678 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="copyright" content="Copyright (c) 2022 UI Group 4">
-    <meta name="author" content="Group 4">
-    <meta name="keywords" content="html5, semantic tags, CSS3, responsive layout, JS, JS+DOM, JS events, Bootstrap, mobile first">
-    <meta name="description" content="Index page for UI project IWD2 Fanshawe course Fall 2022">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="copyright" content="Copyright (c) 2022 UI Group 4" />
+    <meta name="author" content="Group 4" />
+    <meta
+      name="keywords"
+      content="html5, semantic tags, CSS3, responsive layout, JS, JS+DOM, JS events, Bootstrap, mobile first"
+    />
+    <meta
+      name="description"
+      content="Index page for UI project IWD2 Fanshawe course Fall 2022"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./project.css">    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous">
-    </script>
-    <title>Document</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./project.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <title>CanJet Pattern Library</title>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./logo.png" alt="company logo"> CanJet Pattern Library</a>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./logo.png" alt="company logo" />
+            <span class="textHeading1">CanJet Pattern Library</span></a
+          >
 
-                <button type="button" id="sidebarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
+          <button type="button" id="sidebarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
     </header>
-    
+
     <div class="row">
+      <div class="wrapper col-4">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+          <ul class="list-unstyled components">
+            <li>
+              <a
+                href="#homeSubmenu"
+                role="button"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle collapsed textHeading1"
+                >Guidelines</a
+              >
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                <div
+                  class="nav flex-column nav-pills"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <a
+                    class="nav-link active textMenu"
+                    role="button"
+                    id="v-pills-colors-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-colors"
+                    role="tab"
+                    aria-controls="v-pills-colors"
+                    aria-selected="true"
+                    >Colors</a
+                  >
+                  <a
+                    class="nav-link textMenu"
+                    role="button"
+                    id="v-pills-layout-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-layout"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-layout"
+                    aria-selected="false"
+                    >Page layout</a
+                  >
+                  <a
+                    class="nav-link textMenu"
+                    role="button"
+                    id="v-pills-typography-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-typography"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-typography"
+                    aria-selected="false"
+                    >Typography</a
+                  >
+                  <a
+                    class="nav-link textMenu"
+                    role="button"
+                    id="v-pills-visualization-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-visualization"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-visualization"
+                    aria-selected="false"
+                    >Data visualization</a
+                  >
+                </div>
+              </ul>
+            </li>
 
-        <div class="wrapper col-4">
-            <!-- Sidebar -->
-            <nav id="sidebar">
-                
-                <ul class="list-unstyled components">
-                    <li><a href="#homeSubmenu" role="button" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Guidelines</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link active" role="button" id="v-pills-colors-tab" data-bs-toggle="pill" data-bs-target="#v-pills-colors"
-                                role="tab" aria-controls="v-pills-colors" aria-selected="true">Colors</a>
-                                <a class="nav-link" role="button" id="v-pills-layout-tab" data-bs-toggle="pill" data-bs-target="#v-pills-layout"
-                                type="button" role="tab" aria-controls="v-pills-layout" aria-selected="false">Page layout</a>
-                                <a class="nav-link" role="button" id="v-pills-typography-tab" data-bs-toggle="pill" data-bs-target="#v-pills-typography"
-                                type="button" role="tab" aria-controls="v-pills-typography" aria-selected="false">Typography</a>
-                                <a class="nav-link" role="button" id="v-pills-visualization-tab" data-bs-toggle="pill" data-bs-target="#v-pills-visualization"
-                                type="button" role="tab" aria-controls="v-pills-visualization" aria-selected="false">Data visualization</a>
-                            </div>
-                        </ul>
-                        
-                    </li>
-                    
-                    <li>
-                        <a href="#pageSubmenu" role="button" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link" role="button" id="v-pills-navigation-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-navigation" role="tab" aria-controls="v-pills-navigation" aria-selected="false">Navigation</a>
-                                <a class="nav-link" role="button" id="v-pills-tab" data-bs-toggle="pill" data-bs-target="#v-pills"
-                                    type="button" role="tab" aria-controls="v-pills" aria-selected="false">Tab</a>
-                                <a class="nav-link" role="button" id="v-pills-button-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-button" type="button" role="tab" aria-controls="v-pills-button"
-                                    aria-selected="false">Button</a>
-                                <a class="nav-link" role="button" id="v-pills-select-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-select" type="button" role="tab" aria-controls="v-pills-select"
-                                    aria-selected="false">Select</a>
-                                <a class="nav-link" role="button" id="v-pills-list-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-list" type="button" role="tab" aria-controls="v-pills-list"
-                                    aria-selected="false">List</a>
-                                <a class="nav-link" role="button" id="v-pills-images-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-images" type="button" role="tab" aria-controls="v-pills-images"
-                                    aria-selected="false">Images</a>
-                            </div>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+            <li>
+              <a
+                href="#pageSubmenu"
+                role="button"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle textHeading1"
+                >Components</a
+              >
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <div
+                  class="nav flex-column nav-pills"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <a
+                    class="nav-link textMenu"
+                    role="button"
+                    id="v-pills-navigation-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-navigation"
+                    role="tab"
+                    aria-controls="v-pills-navigation"
+                    aria-selected="false"
+                    >Navigation</a
+                  >
+                  <a
+                    class="nav-link textMenu"
+                    role="button"
+                    id="v-pills-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills"
+                    aria-selected="false"
+                    >Tab</a
+                  >
+                  <a
+                    class="nav-link textMenu"
+                    role="button"
+                    id="v-pills-button-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-button"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-button"
+                    aria-selected="false"
+                    >Button</a
+                  >
+                  <a
+                    class="nav-link textMenu"
+                    role="button"
+                    id="v-pills-select-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-select"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-select"
+                    aria-selected="false"
+                    >Select</a
+                  >
+                  <a
+                    class="nav-link textMenu"
+                    role="button"
+                    id="v-pills-list-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-list"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-list"
+                    aria-selected="false"
+                    >List</a
+                  >
+                  <a
+                    class="nav-link textMenu"
+                    role="button"
+                    id="v-pills-images-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-images"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-images"
+                    aria-selected="false"
+                    >Images</a
+                  >
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- CONTENT EDITING STARTS HERE !!!  -->
+      <!-- INSERT YOUR CODE IN APPROPRIATE DIV -->
+
+      <div class="tab-content col-8" id="v-pills-tabContent">
+        <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+        <div
+          class="tab-pane fade show active"
+          id="v-pills-colors"
+          role="tabpanel"
+          aria-labelledby="v-pills-colors-tab"
+        >
+          <br />
+          <h1 class="textHeading1">Colors</h1>
+          <!--BRAND-->
+          <br />
+          <div class="container colors-container">
+            <span class="textHeading2">Brand Colour/Primary Colours</span>
+            <div class="row">
+              <div class="col-sm-6 colorCanJetRed circleFigure"></div>
+              <div class="col colDesc">
+                <span class="desc">
+                  CanJet Red <br />
+                  .colorCanJetRed <br />
+                  #ED1C24
+                </span>
+              </div>
+            </div>
+            <br />
+          </div>
+          <!--SECOND-->
+          <div class="container colors-container">
+            <span class="textHeading2">Secondary Colours</span>
+            <div class="row">
+              <div class="col-sm-4 colorOrange circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Orange <br />
+                  .colorOrange <br />
+                  #EC9A29
+                </span>
+              </div>
+              <div class="col-sm-4 colorSteelBlue circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Steel Blue <br />
+                  .colorSteelBlue <br />
+                  #477CB2
+                </span>
+              </div>
+              <div class="col-sm-4 colorMaroon circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Maroon <br />
+                  .colorMaroon <br />
+                  #821214
+                </span>
+              </div>
+              <div class="col-sm-6 colorSapphire circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Blue Sapphire <br />
+                  .colorSapphire <br />
+                  #106184
+                </span>
+              </div>
+              <div class="col-sm-6 colorGoldenBrown circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Golden Brown <br />
+                  .colorGoldenBrown <br />
+                  #A76A23
+                </span>
+              </div>
+            </div>
+            <br />
+          </div>
+          <!--FEEDBACK-->
+          <div class="container colors-container">
+            <span class="textHeading2">Feedback Colours</span>
+            <div class="row">
+              <div class="col-sm-4 colorPalePink circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Pale Pink <br />
+                  .colorPalePink <br />
+                  #FBDADC
+                </span>
+              </div>
+              <div class="col-sm-4 colorBeauBlue circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Beau Blue <br />
+                  .colorBeauBlue <br />
+                  #D5E8FC
+                </span>
+              </div>
+              <div class="col-sm-4 colorCultured circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Cultured <br />
+                  .colorCultured <br />
+                  #F2F2F4
+                </span>
+              </div>
+            </div>
+            <br />
+          </div>
+          <!--FUNCTIONAL-->
+          <div class="container colors-container">
+            <span class="textHeading2">Functional Colours</span>
+            <div class="row">
+              <div class="col-sm-4 colorBlack circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Black <br />
+                  .colorBlack <br />
+                  #000000
+                </span>
+              </div>
+              <div class="col-sm-4 colorGrey circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Grey <br />
+                  .colorgrey <br />
+                  #707070
+                </span>
+              </div>
+              <div class="col-sm-4 colorWhite circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  White <br />
+                  .colorWhite <br />
+                  #FFFFFF
+                </span>
+              </div>
+            </div>
+            <br />
+          </div>
+          <!--Neutral-->
+          <div class="container colors-container">
+            <span class="textHeading2">Neutral Colours</span>
+            <div class="row">
+              <div class="col-sm-4 colorBlack circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Black <br />
+                  .colorBlack <br />
+                  #000000
+                </span>
+              </div>
+              <div class="col-sm-4 colorGrey circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  Grey <br />
+                  .colorGrey <br />
+                  #707070
+                </span>
+              </div>
+              <div class="col-sm-4 colorWhite circleFigure"></div>
+              <div class="col-sm-2 colDesc">
+                <span class="desc">
+                  White <br />
+                  .colorWhite <br />
+                  #FFFFFF
+                </span>
+              </div>
+              <div class="col-sm-12 colorCultured circleFigure"></div>
+              <div class="col-sm colDesc">
+                <span class="desc">
+                  Cultured <br />
+                  .colorCultured <br />
+                  #F2F2F4
+                </span>
+              </div>
+            </div>
+            <br />
+          </div>
+          <!--END-->
         </div>
 
+        <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+        <div
+          class="tab-pane fade"
+          id="v-pills-layout"
+          role="tabpanel"
+          aria-labelledby="v-pills-layout-tab"
+        >
+          <br />
+          <h1 class="textHeading1">Page layout</h1>
+          <br />
+          <h2 class="textHeading2">Grid Sizes</h2>
+          <br />
+          <p class="textBody">
+            Our Grid-containers do not have round borders, possible to add up to 8 boxes <br/>
+            and only 2px delimiter border to be able to define objects.
+          </p>
+          <br />
+          <p class="bodyBold">Size 1 of 1</p>
+          <!--GRID CONTAINERS-->
+          <div class="container text-center container-grid">
+            <div class="row">
+              <div class="col">1/1</div>
+            </div>
+          </div>
+          <br />
+          <p class="bodyBold">Size 1 of 2</p>
+          <div class="container text-center container-grid">
+            <div class="row">
+              <div class="col-6 col-border">1/2</div>
+              <div class="col-6">1/2</div>
+            </div>
+          </div>
+          <br />
+          <p class="bodyBold">Size 1 of 3</p>
+          <div class="container text-center container-grid">
+            <div class="row">
+              <div class="col-4 col-border">1/3</div>
+              <div class="col-4 col-border">1/3</div>
+              <div class="col-4">1/3</div>
+            </div>
+          </div>
+          <br />
+          <p class="bodyBold">Size 1 of 4</p>
+          <div class="container text-center container-grid">
+            <div class="row">
+              <div class="col-3 col-border">1/4</div>
+              <div class="col-3 col-border">1/4</div>
+              <div class="col-3 col-border">1/4</div>
+              <div class="col-3">1/4</div>
+            </div>
+          </div>
+          <br />
+          <p class="bodyBold">Size 1 of 8</p>
+          <div class="container text-center container-grid">
+            <div class="row">
+              <div class="col col-border">1/8</div>
+              <div class="col col-border">1/8</div>
+              <div class="col col-border">1/8</div>
+              <div class="col col-border">1/8</div>
+              <div class="col col-border">1/8</div>
+              <div class="col col-border">1/8</div>
+              <div class="col col-border">1/8</div>
+              <div class="col">1/8</div>
+            </div>
+          </div>
+          <br />
+          <!--END GRID SIZES-->
+          <!--START GRID MIXING-->
+          <h2 class="textHeading2">Grid Mixing</h2>
+          <br />
+          <p class="textBody">
+            Grid-containers can be mixed in combination of different sizes.
+          </p>
+          <br />
+          <div class="container text-center container-grid">
+            <div class="row">
+              <div class="col-md-10 col-border">7/8</div>
+              <div class="col-md">1/8</div>
+            </div>
+          </div>
+          <br />
+          <div class="container text-center container-grid">
+            <div class="row">
+              <div class="col-md-4 col-border">1/4</div>
+              <div class="col-md-8">3/4</div>
+            </div>
+          </div>
+          <br />
+          <div class="container text-center container-grid">
+            <div class="row">
+              <div class="col-md-2 col-border">1/8</div>
+              <div class="col-md-4 col-border">3/8</div>
+              <div class="col-md-2 col-border">1/8</div>
+              <div class="col-md-4">3/8</div>
+            </div>
+          </div>
+          <br />
 
 
-                                                                            <!-- CONTENT EDITING STARTS HERE !!!  -->
-                                                                            <!-- INSERT YOUR CODE IN APPROPRIATE DIV -->
-        
-        
-        
-        
-        <div class="tab-content col-8" id="v-pills-tabContent">
-            
-            <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade show active" id="v-pills-colors" role="tabpanel" aria-labelledby="v-pills-colors-tab">
-                <p>
-                    Colors page
-                </p>
-            </div>
-            
-            <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills-layout" role="tabpanel" aria-labelledby="v-pills-layout-tab">
-                <p>
-                    Page layout
-                </p>
-            </div>
-
-            <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills-typography" role="tabpanel" aria-labelledby="v-pills-typography-tab">
-                <p>
-                    Typography
-                </p>
-            </div>
-
-            <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills-visualization" role="tabpanel" aria-labelledby="v-pills-visualization-tab">
-                <p>
-                    Visualization
-                </p>
-            </div>
-
-            <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills-navigation" role="tabpanel" aria-labelledby="v-pills-navigation-tab">
-                <p>
-                    Navigation
-                </p>
-            </div>
-            
-            <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills" role="tabpanel" aria-labelledby="v-pills-tab">
-                <p>
-                    Tab
-                </p>
-            </div>
-
-            <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills-button" role="tabpanel" aria-labelledby="v-pills-button-tab">
-                <p>
-                    Button
-                </p>
-            </div>
-            
-            <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills-select" role="tabpanel" aria-labelledby="v-pills-select-tab">
-                <p>
-                    Select
-                </p>
-            </div>
-            
-            <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills-list" role="tabpanel" aria-labelledby="v-pills-list-tab">
-                <p>
-                    List
-                </p>
-            </div>
-
-            <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills-images" role="tabpanel" aria-labelledby="v-pills-images-tab">
-                <p>
-                    Images
-                </p>
-            </div>
+          <!--END-->
         </div>
-        
+
+        <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+        <div
+          class="tab-pane fade"
+          id="v-pills-typography"
+          role="tabpanel"
+          aria-labelledby="v-pills-typography-tab"
+        >
+          <br />
+          <h1 class="textHeading1">Typography</h1>
+          <!--TypeFace-->
+          <br />
+          <h3 class="textHeading2">Typeface</h3>
+          <br />
+          <h1 class="textHeading1">Ms Madi</h1>
+          <br />
+          <h3 class="textHeading2">Type Scale</h3>
+          <br />
+          <table class="table">
+            <tbody>
+              <tr>
+                <th><h1 class="textHeading1">Heading One</h1></th>
+                <th class="textBody">60px</th>
+                <th class="textBody">Ms Madi</th>
+                <th class="textBody">.textHeading1</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th><h2 class="textHeading2">Heading Two</h2></th>
+                <th class="textBody">40px</th>
+                <th class="textBody">Barlow Condensed - Regular</th>
+                <th class="textBody">.textHeading2</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th class="textBody">Body</th>
+                <th class="textBody">20px</th>
+                <th class="textBody">Barlow Condensed - Regular</th>
+                <th class="textBody">.textBody</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th class="textBodyBold">Body Bold</th>
+                <th class="textBody">20px</th>
+                <th class="textBody">Barlow Condensed - Bold</th>
+                <th class="textBody">.textBodyBold</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th class="textChart">Charts</th>
+                <th class="textBody">20px</th>
+                <th class="textBody">Markazi Text - Regular</th>
+                <th class="textBody">.textChart</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th class="textMenu">Menu</th>
+                <th class="textBody">40px</th>
+                <th class="textBody">Ms Madi</th>
+                <th class="textBody">.textMenu</th>
+              </tr>
+            </tbody>
+          </table>
+          <br /><br />
+          <h2 class="textHeading2">Paragraphs</h2>
+          <p class="textBody">
+            The default body text is 20px. For optimum reading length the
+            paragraph width is capped at 635px
+          </p>
+          <br /><br />
+          <h2 class="textHeading2">Symbols</h2>
+          <p class="textBody" style="color: red">@ { & * " #</p>
+          <p class="textBody">
+            1. When we need to include trademark or other symbols into copy,
+            include the without the &ltsup&gt tag.<br />
+            2. When selecting a symbol as part of your design, make sure the
+            element enhances the idea and is ib harmony with copy within the
+            asset.<br />
+            For example:<br />
+            Use the number symbol to talk about a new campaign and/or promore a
+            hashtag.<br />
+            Use the forward slash symbol when talking about a new webpage or a
+            link.
+          </p>
+          <!--END-->
+        </div>
+
+        <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+        <div
+          class="tab-pane fade"
+          id="v-pills-visualization"
+          role="tabpanel"
+          aria-labelledby="v-pills-visualization-tab"
+        >
+          <br />
+          <h1 class="textHeading1">Data Visualization</h1>
+          <br />
+        </div>
+
+        <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+        <div
+          class="tab-pane fade"
+          id="v-pills-navigation"
+          role="tabpanel"
+          aria-labelledby="v-pills-navigation-tab"
+        >
+          <p>Navigation</p>
+        </div>
+
+        <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+        <div
+          class="tab-pane fade"
+          id="v-pills"
+          role="tabpanel"
+          aria-labelledby="v-pills-tab"
+        >
+          <p>Tab</p>
+        </div>
+
+        <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+        <div
+          class="tab-pane fade"
+          id="v-pills-button"
+          role="tabpanel"
+          aria-labelledby="v-pills-button-tab"
+        >
+          <p>Button</p>
+        </div>
+
+        <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+        <div
+          class="tab-pane fade"
+          id="v-pills-select"
+          role="tabpanel"
+          aria-labelledby="v-pills-select-tab"
+        >
+          <p>Select</p>
+        </div>
+
+        <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+        <div
+          class="tab-pane fade"
+          id="v-pills-list"
+          role="tabpanel"
+          aria-labelledby="v-pills-list-tab"
+        >
+          <p>List</p>
+        </div>
+
+        <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+        <div
+          class="tab-pane fade"
+          id="v-pills-images"
+          role="tabpanel"
+          aria-labelledby="v-pills-images-tab"
+        >
+          <p>Images</p>
+        </div>
+      </div>
     </div>
-
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            let sidebarButton = document.querySelector('#sidebarCollapse'),
-                sidebar = document.querySelector('#sidebar');
+      document.addEventListener("DOMContentLoaded", () => {
+        let sidebarButton = document.querySelector("#sidebarCollapse"),
+          sidebar = document.querySelector("#sidebar");
 
-            sidebarButton.addEventListener('click', () => {
-                sidebar.classList.toggle('active');
-            });
+        sidebarButton.addEventListener("click", () => {
+          sidebar.classList.toggle("active");
         });
+      });
     </script>
-
-</body>
+  </body>
 </html>
