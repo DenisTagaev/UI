@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 body {
-    font-family: 'Ms Madi', cursive;
+    font-family: 'Barlow Condensed';
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 img{
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     margin: -10px;
 }
 .navbar{
@@ -91,6 +94,148 @@ a[data-bs-toggle="collapse"] {
     -o-border-radius: 0;
 }
 
+/* Artem CSS */
+
+.colors-container, .table {
+    max-width: 800px;
+    min-width: 650px;
+}
+
+.circleFigure{
+    margin-top: 3%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.highlight {
+    font-size: 1rem;
+    width: 600px;
+    height: 170px;
+}
+
+.container-grid {
+    margin-top: 3%;
+    background: #477CB2 ;
+    width: 800px;
+    border:#106184 solid 8px;
+}
+
+.col-border {
+    border-right:#106184 solid 2px;
+}
+
+
+/*FONTS*/
+.desc {
+    font-family: 'Barlow Condensed';
+    opacity: 0.5;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.textHeading1 {
+    font-family: 'Ms Madi';
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.textHeading2 {
+    font-size: 40px;
+    font-family: 'Barlow Condensed';
+    opacity: 0.5;
+}
+
+.textBody {
+    font-size: 20px;
+    font-family: 'Barlow Condensed';
+    opacity: 0.5;
+}
+
+.textBodyBold {
+    font-size: 20px;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+}
+
+.textChart {
+    font-size: 20px;
+    font-family: 'Markazi Text', serif;
+    font-weight: normal;
+}
+
+.textMenu {
+    font-family: 'Ms Madi';
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0.5;
+    
+}
+
+.colDesc {
+    margin-top: 6%;
+    line-height: 0.9;
+}
+
+
+/*COLORS*/
+.colorCanJetRed {
+    background: #ED1C24;
+}
+
+.colorOrange {
+    background: #EC9A29;
+}
+
+.colorSteelBlue {
+    background: #477CB2;
+}
+
+.colorMaroon {
+    background: #821214;
+}
+
+.colorSapphire {
+    background: #106184;
+}
+
+.colorGoldenBrown {
+    background: #A76A23;
+}
+
+.colorPalePink {
+    background: #FBDADC;
+}
+
+.colorBeauBlue {
+    background: #D5E8FC;
+}
+
+.colorCultured {
+    background: #F2F2F4;
+}
+
+.colorBlack {
+    background: #000000;
+}
+
+.colorGrey {
+    background: #707070;
+}
+
+.colorWhite {
+    border: solid 0.1px black;
+    opacity: 0.2;
+    background: #FFFFFF;
+}
+
+
+/*END COLORS*/
+
+
+
+
+/* Artem CSS ends*/
 
 @media (max-width: 768px) {
     #sidebar {
