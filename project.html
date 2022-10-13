@@ -41,7 +41,7 @@
 
     <div class="row">
 
-        <div class="wrapper col-2">
+        <div class="wrapper col-sm-12 col-md-2">
             <!-- Sidebar -->
             <nav id="sidebar">
 
@@ -107,7 +107,7 @@
 
 
 
-        <div class="tab-content bd-content col-10" id="v-pills-tabContent">
+        <div class="tab-content bd-content col-sm-12 col-md-10" id="v-pills-tabContent">
 
             <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
             <div class="tab-pane fade show active" id="v-pills-colors" role="tabpanel"
@@ -148,9 +148,9 @@
 
             <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
             <div class="tab-pane fade p-4" id="v-pills" role="tabpanel" aria-labelledby="v-pills-tab">
-                <h2 class="text-center">
+                <h1 class="text-center">
                     Tabs
-                </h2>
+                </h1>
                 <p class="bd-lead">Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate
                     a tabbed interface. Use them to
                     create tabbable regions.</p>
@@ -267,16 +267,16 @@
         <code class="language-html" data-lang="html" data-id="pills">
             <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-items-start"</span><span class="p">&gt;</span>
                 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav flex-column nav-pills me-3"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-tab"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tablist"</span> <span class="na">aria-orientation</span><span class="o">=</span><span class="s">"vertical"</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-home-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-home"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-home"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-profile-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-profile"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-profile"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Profile<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-messages-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-messages"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-messages"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Messages<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-settings-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-settings"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-settings"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Settings<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-home-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-home"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-home"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-profile-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-profile"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-profile"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Profile<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-messages-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-messages"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-messages"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Messages<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-settings-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-settings"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-settings"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Settings<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
                 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-content"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-tabContent"</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade show active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-home"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-home-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-profile"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-profile-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-messages"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-messages-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-settings"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-settings-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade show active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-home"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-home-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-profile"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-profile-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-messages"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-messages-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-settings"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-settings-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
                 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
             <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
         </code>
@@ -300,9 +300,9 @@
 
             <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
             <div class="tab-pane p-4 fade" id="v-pills-list" role="tabpanel" aria-labelledby="v-pills-list-tab">
-                <h2 class="text-center">
+                <h1 class="text-center">
                     Lists
-                </h2>
+                </h1>
                 <p class="bd-lead">List groups are a flexible and powerful component for displaying a series of content.
                     Modify and
                     extend them to support just about any content within.</p>
@@ -423,12 +423,13 @@
             document.addEventListener("DOMContentLoaded", () => {
                 let sidebarButton = document.querySelector('#sidebarCollapse'),
                     sidebar = document.querySelector('#sidebar'),
-                    mainSpace = document.querySelector('.col-10');
+                    mainSpace = document.querySelector('#v-pills-tabContent');
 
                 sidebarButton.addEventListener('click', () => {
                     sidebar.classList.toggle('active');
-                    mainSpace.classList.contains('col-10') ?
-                        mainSpace.classList.replace('col-10', 'col-12') : mainSpace.classList.replace('col-12', 'col-10');
+                    mainSpace.classList.contains('col-md-10') ?
+                        mainSpace.classList.replace('col-md-10', 'col-12') && sidebar.classList.toggle('hidden') :
+                        mainSpace.classList.replace('col-12', 'col-md-10') && sidebar.classList.toggle('hidden');
                 });
             });
 

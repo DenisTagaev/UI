@@ -4,8 +4,9 @@ body {
     font-size: 1.4em;
 }
 h2,
-h3{
-    font-family: 'Markazi Text', serif;
+h3,
+.btn-clipboard{
+    font-family: 'Barlow Condensed', serif;
 }
 img{
     width: 70px;
@@ -20,7 +21,9 @@ img{
     font-size: 1.7em;
     color: #d73038;
 }
-
+.hidden{
+    display: none;
+}
 a,
 a:hover,
 a:focus {
@@ -64,13 +67,13 @@ ul ul a {
 
 #sidebar {
     min-width: 250px;
-    max-width: 250px;
+    /* max-width: 250px; */
     min-height: 100vh;
 }
 
 #sidebar.active {
     margin-left: -250px;
-    display: none;
+    /* display: none; */
 }
 a[data-bs-toggle="collapse"] {
     position: relative;
@@ -145,11 +148,19 @@ a[data-bs-toggle="collapse"] {
 
 
 @media (max-width: 768px) {
+    .navbar-light .navbar-brand{
+        font-size: 1.5rem;
+    }
     #sidebar {
-        margin-left: -250px;
+        width: 100%;
+        margin-left: 0;
+        position: absolute;
+        /* z-index: 99; */
     }
 
     #sidebar.active {
-        margin-left: 0;
+        margin-left: -100%;
+        max-width: 100%;
+        width: 100%;
     }
 }
