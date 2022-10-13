@@ -3,6 +3,10 @@ body {
     font-weight: bold;
     font-size: 1.4em;
 }
+h2,
+h3{
+    font-family: 'Markazi Text', serif;
+}
 img{
     width: 70px;
     height: 70px;
@@ -11,9 +15,10 @@ img{
 .navbar{
     background-color: #D5E8FC;
 }
-.navbar-brand{
+.navbar-light .navbar-brand {
     padding: 0;
     font-size: 1.7em;
+    color: #d73038;
 }
 
 a,
@@ -23,7 +28,6 @@ a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-
 #sidebar,
 .nav-link{
     /* don't forget to add all the previously mentioned styles here too */
@@ -31,30 +35,28 @@ a:focus {
     color: #000;
     transition: all 0.3s;
 }
-
 #sidebar ul.components {
     padding: 0 0 20px 0;
     border-bottom: 1px solid #D5E8FC;
 }
-
 #sidebar ul li a {
     padding: 10px;
     font-size: 1.1em;
     display: block;
 }
-
 #sidebar ul div a:hover, #sidebar ul div.active>a,
 a[aria-expanded="true"] {
     color: #FFF;
     background: #88a0bd;
 }
-
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #D5E8FC;
 }
-
+.row{
+    --bs-gutter-x: 0;
+}
 .wrapper {
     display: flex;
     align-items: stretch;
@@ -68,6 +70,7 @@ ul ul a {
 
 #sidebar.active {
     margin-left: -250px;
+    display: none;
 }
 a[data-bs-toggle="collapse"] {
     position: relative;
@@ -82,14 +85,63 @@ a[data-bs-toggle="collapse"] {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .nav-link:hover{
+.nav-pills .nav-link:hover,
+.nav-link:hover{
     background-color: #88a0bd;
+    color: #fff;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
 }
+
+.bd-lead, 
+.bd-example, 
+.intro{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-indent: 2%;
+}
+
+.bd-clipboard {
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.btn-clipboard {
+    position: absolute;
+    top: 0.65rem;
+    right: 0.65rem;
+    z-index: 10;
+    display: block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.btn-clipboard:hover,
+.list-group-item.li-active{
+    background-color: #88a0bd;
+    color: #fff;
+}
+.code-container {
+    background: #282c34;
+    color: #fff;
+}
+
+.chroma .na {
+    color: #cf9700;
+}
+
+.chroma .nt {
+    color: #d73038;
+}
+
+.chroma .s {
+    color:#54d200 ;
+}
+
 
 
 @media (max-width: 768px) {

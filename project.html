@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="copyright" content="Copyright (c) 2022 UI Group 4">
     <meta name="author" content="Group 4">
-    <meta name="keywords" content="html5, semantic tags, CSS3, responsive layout, JS, JS+DOM, JS events, Bootstrap, mobile first">
+    <meta name="keywords"
+        content="html5, semantic tags, CSS3, responsive layout, JS, JS+DOM, JS events, Bootstrap, mobile first">
     <meta name="description" content="Index page for UI project IWD2 Fanshawe course Fall 2022">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Markazi+Text&family=Ms+Madi&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./project.css">    
-    
+    <link rel="stylesheet" href="./project.css">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -34,50 +38,60 @@
             </div>
         </nav>
     </header>
-    
+
     <div class="row">
 
-        <div class="wrapper col-4">
+        <div class="wrapper col-2">
             <!-- Sidebar -->
             <nav id="sidebar">
-                
+
                 <ul class="list-unstyled components">
-                    <li><a href="#homeSubmenu" role="button" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Guidelines</a>
+                    <li><a href="#homeSubmenu" role="button" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle collapsed">Guidelines</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link active" role="button" id="v-pills-colors-tab" data-bs-toggle="pill" data-bs-target="#v-pills-colors"
-                                role="tab" aria-controls="v-pills-colors" aria-selected="true">Colors</a>
-                                <a class="nav-link" role="button" id="v-pills-layout-tab" data-bs-toggle="pill" data-bs-target="#v-pills-layout"
-                                type="button" role="tab" aria-controls="v-pills-layout" aria-selected="false">Page layout</a>
-                                <a class="nav-link" role="button" id="v-pills-typography-tab" data-bs-toggle="pill" data-bs-target="#v-pills-typography"
-                                type="button" role="tab" aria-controls="v-pills-typography" aria-selected="false">Typography</a>
-                                <a class="nav-link" role="button" id="v-pills-visualization-tab" data-bs-toggle="pill" data-bs-target="#v-pills-visualization"
-                                type="button" role="tab" aria-controls="v-pills-visualization" aria-selected="false">Data visualization</a>
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <a class="nav-link active" role="button" id="v-pills-colors-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-colors" role="tab" aria-controls="v-pills-colors"
+                                    aria-selected="true">Colors</a>
+                                <a class="nav-link" role="button" id="v-pills-layout-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-layout" type="button" role="tab"
+                                    aria-controls="v-pills-layout" aria-selected="false">Page layout</a>
+                                <a class="nav-link" role="button" id="v-pills-typography-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-typography" type="button" role="tab"
+                                    aria-controls="v-pills-typography" aria-selected="false">Typography</a>
+                                <a class="nav-link" role="button" id="v-pills-visualization-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-visualization" type="button" role="tab"
+                                    aria-controls="v-pills-visualization" aria-selected="false">Data visualization</a>
                             </div>
                         </ul>
-                        
+
                     </li>
-                    
+
                     <li>
-                        <a href="#pageSubmenu" role="button" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+                        <a href="#pageSubmenu" role="button" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">Components</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
                                 <a class="nav-link" role="button" id="v-pills-navigation-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-navigation" role="tab" aria-controls="v-pills-navigation" aria-selected="false">Navigation</a>
-                                <a class="nav-link" role="button" id="v-pills-tab" data-bs-toggle="pill" data-bs-target="#v-pills"
-                                    type="button" role="tab" aria-controls="v-pills" aria-selected="false">Tab</a>
+                                    data-bs-target="#v-pills-navigation" role="tab" aria-controls="v-pills-navigation"
+                                    aria-selected="false">Navigation</a>
+                                <a class="nav-link" role="button" id="v-pills-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills" type="button" role="tab" aria-controls="v-pills"
+                                    aria-selected="false">Tab</a>
                                 <a class="nav-link" role="button" id="v-pills-button-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-button" type="button" role="tab" aria-controls="v-pills-button"
-                                    aria-selected="false">Button</a>
+                                    data-bs-target="#v-pills-button" type="button" role="tab"
+                                    aria-controls="v-pills-button" aria-selected="false">Button</a>
                                 <a class="nav-link" role="button" id="v-pills-select-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-select" type="button" role="tab" aria-controls="v-pills-select"
-                                    aria-selected="false">Select</a>
+                                    data-bs-target="#v-pills-select" type="button" role="tab"
+                                    aria-controls="v-pills-select" aria-selected="false">Select</a>
                                 <a class="nav-link" role="button" id="v-pills-list-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-list" type="button" role="tab" aria-controls="v-pills-list"
                                     aria-selected="false">List</a>
                                 <a class="nav-link" role="button" id="v-pills-images-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-images" type="button" role="tab" aria-controls="v-pills-images"
-                                    aria-selected="false">Images</a>
+                                    data-bs-target="#v-pills-images" type="button" role="tab"
+                                    aria-controls="v-pills-images" aria-selected="false">Images</a>
                             </div>
                         </ul>
                     </li>
@@ -87,21 +101,22 @@
 
 
 
-                                                                            <!-- CONTENT EDITING STARTS HERE !!!  -->
-                                                                            <!-- INSERT YOUR CODE IN APPROPRIATE DIV -->
-        
-        
-        
-        
-        <div class="tab-content col-8" id="v-pills-tabContent">
-            
+        <!-- CONTENT EDITING STARTS HERE !!!  -->
+        <!-- INSERT YOUR CODE IN APPROPRIATE DIV -->
+
+
+
+
+        <div class="tab-content bd-content col-10" id="v-pills-tabContent">
+
             <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade show active" id="v-pills-colors" role="tabpanel" aria-labelledby="v-pills-colors-tab">
+            <div class="tab-pane fade show active" id="v-pills-colors" role="tabpanel"
+                aria-labelledby="v-pills-colors-tab">
                 <p>
                     Colors page
                 </p>
             </div>
-            
+
             <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
             <div class="tab-pane fade" id="v-pills-layout" role="tabpanel" aria-labelledby="v-pills-layout-tab">
                 <p>
@@ -117,7 +132,8 @@
             </div>
 
             <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills-visualization" role="tabpanel" aria-labelledby="v-pills-visualization-tab">
+            <div class="tab-pane fade" id="v-pills-visualization" role="tabpanel"
+                aria-labelledby="v-pills-visualization-tab">
                 <p>
                     Visualization
                 </p>
@@ -129,12 +145,143 @@
                     Navigation
                 </p>
             </div>
-            
+
             <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills" role="tabpanel" aria-labelledby="v-pills-tab">
-                <p>
-                    Tab
+            <div class="tab-pane fade p-4" id="v-pills" role="tabpanel" aria-labelledby="v-pills-tab">
+                <h2 class="text-center">
+                    Tabs
+                </h2>
+                <p class="bd-lead">Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate
+                    a tabbed interface. Use them to
+                    create tabbable regions.</p>
+                <p class="intro">Dynamic tabbed interfaces, as described in the <a
+                        href="https://www.w3.org/TR/wai-aria-practices/#tabpanel"><abbr
+                            title="Web Accessibility Initiative">WAI</abbr> <abbr
+                            title="Accessible Rich Internet Applications">ARIA</abbr> Authoring Practices</a>, require
+                    <code>role="tablist"</code>, <code>role="tab"</code>, <code>role="tabpanel"</code>, and additional
+                    <code>aria-</code> attributes in order to convey their structure, functionality and current state to
+                    users of
+                    assistive technologies (such as screen readers). As a best practice, we recommend using
+                    <code>&lt;button&gt;</code>
+                    elements for the tabs, as these are controls that trigger a dynamic change, rather than links that
+                    navigate to a new
+                    page or location.
                 </p>
+                <h3 id="active-items">Tabs<a class="anchorjs-link" aria-label="Anchor" href="#modifications"
+                        style="padding-left: 0.375em;"></a></h3>
+                <div class="my-3 bd-example">
+                    <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <p><strong>This is some placeholder content the Home tab's associated content.</strong></p>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <p><strong>This is some placeholder content the Profile tab's associated content.</strong>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <p><strong>This is some placeholder content the Contact tab's associated content.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" data-id="tabs"
+                    data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+                <div class="highlight">
+                    <pre tabindex="0" class="chroma code-container">
+        <code class="language-html" data-lang="html" data-id="tabs">
+            <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav nav-tabs"</span> <span class="na">id</span><span class="o">=</span><span class="s">"myTab"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tablist"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span> <span class="na">role</span><span class="o">=</span><span class="s">"presentation"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"home-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#home"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"home"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span> <span class="na">role</span><span class="o">=</span><span class="s">"presentation"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"profile-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#profile"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"profile"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Profile<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span> <span class="na">role</span><span class="o">=</span><span class="s">"presentation"</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"contact-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#contact"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"contact"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Contact<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-content"</span> <span class="na">id</span><span class="o">=</span><span class="s">"myTabContent"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade show active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"home"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"home-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"profile"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"profile-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"contact"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"contact-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        </code>
+                    </pre>
+                </div>
+                <h3 id="active-items">Pills<a class="anchorjs-link" aria-label="Anchor" href="#modifications"
+                        style="padding-left: 0.375em;"></a></h3>
+                <p class="intro">Same can be achieved with vertical tabs or pills.</p>
+                <div class="my-3 bd-example">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">Home</button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <p><strong>This is some placeholder content the Home tab's associated content.</strong></p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <p><strong>This is some placeholder content the Profile tab's associated content.</strong></p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                <p><strong>This is some placeholder content the Messages tab's associated content.</strong></p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                <p><strong>This is some placeholder content the Settings tab's associated content.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bd-clipboard"><button type="button" data-id="pills" class="btn-clipboard"
+                    data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+                <div class="highlight code-container">
+                    <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html" data-id="pills">
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex align-items-start"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav flex-column nav-pills me-3"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-tab"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tablist"</span> <span class="na">aria-orientation</span><span class="o">=</span><span class="s">"vertical"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-home-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-home"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-home"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-profile-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-profile"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-profile"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Profile<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-messages-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-messages"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-messages"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Messages<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-settings-tab"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"pill"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#v-pills-settings"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tab"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"v-pills-settings"</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">"false"</span><span class="p">&gt;</span>Settings<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-content"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-tabContent"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade show active"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-home"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-home-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-profile"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-profile-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-messages"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-messages-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"tab-pane fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"v-pills-settings"</span> <span class="na">role</span><span class="o">=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"v-pills-settings-tab"</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        </code>
+                    </pre>
+                </div>
             </div>
 
             <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
@@ -143,41 +290,154 @@
                     Button
                 </p>
             </div>
-            
+
             <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
             <div class="tab-pane fade" id="v-pills-select" role="tabpanel" aria-labelledby="v-pills-select-tab">
                 <p>
                     Select
                 </p>
             </div>
-            
-            <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills-list" role="tabpanel" aria-labelledby="v-pills-list-tab">
-                <p>
-                    List
-                </p>
-            </div>
 
             <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
-            <div class="tab-pane fade" id="v-pills-images" role="tabpanel" aria-labelledby="v-pills-images-tab">
-                <p>
-                    Images
-                </p>
+            <div class="tab-pane p-4 fade" id="v-pills-list" role="tabpanel" aria-labelledby="v-pills-list-tab">
+                <h2 class="text-center">
+                    Lists
+                </h2>
+                <p class="bd-lead">List groups are a flexible and powerful component for displaying a series of content.
+                    Modify and
+                    extend them to support just about any content within.</p>
+                <h3 id="basic-example">Unordered list<a class="anchorjs-link " aria-label="Anchor" data-anchor
+                        js-icon="#" href="#basic-example" style="padding-left: 0.375em;"></a></h3>
+                <div class="my-3 bd-example">
+                    <ul class="list-group">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
+                </div>
+                <div class="bd-clipboard"><button type="button" data-id="1" class="btn-clipboard"
+                        data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+                <div class="highlight">
+                    <pre tabindex="0" class="chroma code-container">
+        <code class="language-html" data-lang="html" data-id="1">
+            <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>An item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A second item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A third item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A fourth item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>And a fifth one<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+        </code>
+                    </pre>
+                </div>
+                <h3 id="numbered">Numbered list<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#"
+                        href="#numbered" style="padding-left: 0.375em;"></a></h3>
+                <p class="intro">Add the <code>.list-group-numbered</code> modifier class to opt into numbered list
+                    group items.</p>
+                <div class="my-3 bd-example">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">A list item</li>
+                        <li class="list-group-item">A list item</li>
+                        <li class="list-group-item">A list item</li>
+                    </ol>
+                </div>
+                <div class="bd-clipboard"><button type="button" data-id="2" class="btn-clipboard"
+                        data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                </div>
+                <div class="highlight">
+                    <pre tabindex="0" class="chroma code-container">
+        <code class="language-html" data-lang="html" data-id="2">
+            <span class="p">&lt;</span><span class="nt">ol</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group list-group-numbered"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A list item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A list item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item"</span><span class="p">&gt;</span>A list item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+        </code>
+                    </pre>
+                </div>
+                <h3 id="active-items">Modifications<a class="anchorjs-link" aria-label="Anchor" href="#modifications"
+                        style="padding-left: 0.375em;"></a></h3>
+                <p class="intro">Add <code>.li-active</code> to a <code>.list-group-item</code> to indicate the current
+                    active selection.</p>
+                <div class="my-3 bd-example">
+                    <ul class="list-group">
+                        <li class="list-group-item li-active" aria-current="true">An active item</li>
+                    </ul>
+                </div>
+
+                <div class="highlight">
+                    <div class="bd-clipboard"><button type="button" data-id="3" class="btn-clipboard"
+                            data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                    </div>
+                    <div class="highlight">
+                        <pre tabindex="0" class="chroma code-container">
+        <code class="language-html" data-lang="html" data-id="3">
+            <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item li-active"</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>An active item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+        </code>
+                    </pre>
+                    </div>
+
+                    <p class="intro">Add <code>.disabled</code> to a <code>.list-group-item</code> to make it
+                        <em>appear</em> disabled. Note that some
+                        elements with <code>.disabled</code> will also require custom JavaScript to fully disable their
+                        click events (e.g.,
+                        links).</p>
+                    <div class="my-3 bd-example">
+                        <ul class="list-group">
+                            <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+                        </ul>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" data-id="4" class="btn-clipboard"
+                            data-bs-original-title="Copy to clipboard" onclick="copyCodeToClipboard(this)">Copy</button>
+                    </div>
+                    <div class="highlight">
+                        <pre tabindex="0" class="chroma code-container">
+        <code class="language-html" data-lang="html" data-id="4">
+            <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group"</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"list-group-item disabled"</span> <span class="na">aria-disabled</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>A disabled item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+        </code>
+                    </pre>
+                    </div>
+
+
+
+                </div>
+
+                <!-- PLEASE DO NOT TOUCH THE DIV, ONLY EDIT CONTENT INSIDE-->
+                <div class="tab-pane fade" id="v-pills-images" role="tabpanel" aria-labelledby="v-pills-images-tab">
+                    <p>
+                        Images
+                    </p>
+                </div>
             </div>
+
         </div>
-        
-    </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            let sidebarButton = document.querySelector('#sidebarCollapse'),
-                sidebar = document.querySelector('#sidebar');
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                let sidebarButton = document.querySelector('#sidebarCollapse'),
+                    sidebar = document.querySelector('#sidebar'),
+                    mainSpace = document.querySelector('.col-10');
 
-            sidebarButton.addEventListener('click', () => {
-                sidebar.classList.toggle('active');
+                sidebarButton.addEventListener('click', () => {
+                    sidebar.classList.toggle('active');
+                    mainSpace.classList.contains('col-10') ?
+                        mainSpace.classList.replace('col-10', 'col-12') : mainSpace.classList.replace('col-12', 'col-10');
+                });
             });
-        });
-    </script>
+
+            function copyCodeToClipboard(element) {
+                let textToCopy = document.querySelector(`code[data-id="${element.dataset.id}"]`);
+                navigator.clipboard.writeText(textToCopy.textContent);
+            }
+        </script>
 
 </body>
+
 </html>
