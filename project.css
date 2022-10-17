@@ -3,11 +3,6 @@ body {
     font-weight: bold;
     font-size: 1.4em;
 }
-h2,
-h3,
-.btn-clipboard{
-    font-family: 'Barlow Condensed', serif;
-}
 img{
     width: 110px;
     height: 110px;
@@ -64,7 +59,9 @@ ul ul a {
     display: flex;
     align-items: stretch;
 }
-
+.btn-clipboard{
+    font-family: 'Barlow Condensed', serif;
+}
 #sidebar {
     min-width: 250px;
     /* max-width: 250px; */
@@ -149,7 +146,134 @@ a[data-bs-toggle="collapse"] {
     color:#54d200 ;
 }
 
+/* Artem CSS */
 
+.colors-container,
+.table {
+    max-width: 800px;
+    min-width: 650px;
+}
+
+.circleFigure {
+    margin-top: 3%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.container-grid {
+    margin-top: 3%;
+    background: #477CB2;
+    width: 800px;
+    border: #106184 solid 8px;
+}
+
+.col-border {
+    border-right: #106184 solid 2px;
+}
+
+
+/*FONTS*/
+.desc {
+    font-family: 'Barlow Condensed';
+    opacity: 0.5;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.textHeading1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.textHeading2 {
+    font-size: 40px;
+    font-family: 'Barlow Condensed';
+    opacity: 0.5;
+}
+
+.textBody {
+    font-size: 20px;
+    font-family: 'Barlow Condensed';
+    opacity: 0.5;
+}
+
+.textBodyBold {
+    font-size: 20px;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+}
+
+.textChart {
+    font-size: 20px;
+    font-family: 'Markazi Text', serif;
+    font-weight: normal;
+}
+
+.textMenu {
+    font-family: 'Ms Madi';
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0.5;
+
+}
+
+.colDesc {
+    margin-top: 6%;
+    line-height: 0.9;
+}
+
+
+/*COLORS*/
+.colorCanJetRed {
+    background: #ED1C24;
+}
+
+.colorOrange {
+    background: #EC9A29;
+}
+
+.colorSteelBlue {
+    background: #477CB2;
+}
+
+.colorMaroon {
+    background: #821214;
+}
+
+.colorSapphire {
+    background: #106184;
+}
+
+.colorGoldenBrown {
+    background: #A76A23;
+}
+
+.colorPalePink {
+    background: #FBDADC;
+}
+
+.colorBeauBlue {
+    background: #D5E8FC;
+}
+
+.colorCultured {
+    background: #F2F2F4;
+}
+
+.colorBlack {
+    background: #000000;
+}
+
+.colorGrey {
+    background: #707070;
+}
+
+.colorWhite {
+    border: solid 0.1px black;
+    opacity: 0.2;
+    background: #FFFFFF;
+}
 
 @media (max-width: 768px) {
     .navbar-light .navbar-brand{
